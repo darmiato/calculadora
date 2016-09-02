@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.darmiato.calculadora.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCampo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="false" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="1"
+        android:id="@+id/idUm"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_below="@+id/idCampo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="2"
+        android:id="@+id/idDois"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_alignBottom="@+id/idUm"
+        android:layout_toRightOf="@+id/idUm"
+        android:layout_toEndOf="@+id/idUm" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="3"
+        android:id="@+id/idTres"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_alignTop="@+id/idDois"
+        android:layout_toRightOf="@+id/idDois"
+        android:layout_toEndOf="@+id/idDois" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="4"
+        android:id="@+id/idQuatro"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_below="@+id/idUm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="5"
+        android:id="@+id/idCinco"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_below="@+id/idDois"
+        android:layout_alignLeft="@+id/idDois"
+        android:layout_alignStart="@+id/idDois" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="6"
+        android:id="@+id/idSeis"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_alignBottom="@+id/idCinco"
+        android:layout_toRightOf="@+id/idCinco"
+        android:layout_toEndOf="@+id/idCinco" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="7"
+        android:id="@+id/idSete"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_below="@+id/idQuatro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="8"
+        android:id="@+id/idOito"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_alignTop="@+id/idSete"
+        android:layout_alignLeft="@+id/idCinco"
+        android:layout_alignStart="@+id/idCinco" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="9"
+        android:id="@+id/idNove"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_alignTop="@+id/idOito"
+        android:layout_toRightOf="@+id/idOito"
+        android:layout_toEndOf="@+id/idOito" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="."
+        android:id="@+id/idPonto"
+        android:textSize="48dp"
+        android:onClick="soma"
+        android:layout_below="@+id/idSete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="0"
+        android:id="@+id/idZero"
+        android:textSize="48dp"
+        android:onClick="setCampo"
+        android:layout_below="@+id/idSete"
+        android:layout_toRightOf="@+id/idPonto"
+        android:layout_toEndOf="@+id/idPonto" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="/"
+        android:id="@+id/idDiv"
+        android:textSize="48dp"
+        android:onClick="div"
+        android:layout_below="@+id/idMult"
+        android:layout_alignLeft="@+id/idMult"
+        android:layout_alignStart="@+id/idMult" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="x"
+        android:id="@+id/idMult"
+        android:textSize="48dp"
+        android:onClick="mult"
+        android:layout_alignTop="@+id/idNove"
+        android:layout_toRightOf="@+id/idNove"
+        android:layout_toEndOf="@+id/idNove" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="-"
+        android:id="@+id/idSub"
+        android:textSize="48dp"
+        android:onClick="sub"
+        android:layout_below="@+id/idSoma"
+        android:layout_alignLeft="@+id/idMult"
+        android:layout_alignStart="@+id/idMult" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="+"
+        android:id="@+id/idSoma"
+        android:textSize="48dp"
+        android:onClick="soma"
+        android:layout_alignTop="@+id/idTres"
+        android:layout_alignLeft="@+id/idSub"
+        android:layout_alignStart="@+id/idSub" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="="
+        android:id="@+id/idResult"
+        android:textSize="48dp"
+        android:onClick="result"
+        android:layout_below="@+id/idNove"
+        android:layout_toLeftOf="@+id/idDiv"
+        android:layout_toStartOf="@+id/idDiv" />
+
+</RelativeLayout>
